@@ -4,6 +4,11 @@
     box-sizing: border-box !important;
 }
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 nav {
     font-size: 18px;
     .navbar-nav {
@@ -87,5 +92,49 @@ nav {
     }
     &-content-life:hover {
         background-image: url('../images/teamwork3.jpg');
+    }
+}
+
+.experience {
+    background: url('../images/experience-banner.jpg');
+    .row {
+        padding-bottom: 60px;
+    }
+    &-title {
+        padding: 50px 0;
+        font-weight: bold;
+        color: #fff;
+    }
+    &-content {
+        padding: 0;
+        &-images {
+            border-radius: 15px;
+            &-image {
+                margin: 15px 10px;
+                border-radius: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .experience {
+        &-column-2 {
+            display: none;
+        }
+        &-column-3 {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .experience {
+        &-column-2 {
+            display: block;
+        }
+        &-column-3 {
+            display: block;
+        }
     }
 }

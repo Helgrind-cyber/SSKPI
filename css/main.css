@@ -5,6 +5,11 @@
           box-sizing: border-box !important;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 nav {
   font-size: 18px;
 }
@@ -107,5 +112,50 @@ nav .navbar-nav .nav-item {
 
 .introduce-content-life:hover {
   background-image: url("../images/teamwork3.jpg");
+}
+
+.experience {
+  background: url("../images/experience-banner.jpg");
+}
+
+.experience .row {
+  padding-bottom: 60px;
+}
+
+.experience-title {
+  padding: 50px 0;
+  font-weight: bold;
+  color: #fff;
+}
+
+.experience-content {
+  padding: 0;
+}
+
+.experience-content-images {
+  border-radius: 15px;
+}
+
+.experience-content-images-image {
+  margin: 15px 10px;
+  border-radius: 50px;
+}
+
+@media (max-width: 576px) {
+  .experience-column-2 {
+    display: none;
+  }
+  .experience-column-3 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .experience-column-2 {
+    display: block;
+  }
+  .experience-column-3 {
+    display: block;
+  }
 }
 /*# sourceMappingURL=main.css.map */
