@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
     font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 nav {
@@ -36,5 +36,56 @@ nav {
         &-button:hover {
             background-color: rgb(72, 186, 228);
         }
+    }
+}
+
+.introduce {
+    background: #EEF2F6;
+    .row {
+        padding-bottom: 100px;
+    }
+    &-title {
+        padding: 85px 0;
+        font-weight: bold;
+        color: #3E3E94;
+    }
+    &-content {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+        &-icon {
+            padding: 40px 0;
+        }
+        &-title {
+            font-weight: bold;
+            margin: 0;
+            padding-bottom: 15px;
+        }
+        &-paragraph {
+            line-height: 28px;
+        }
+    }
+    &-content:hover {
+        background-size: cover;
+        color: #fff;
+        background-position: center top;
+    }
+    &-content-career {
+        padding: 20px 30px 150px 30px;
+    }
+    &-content-earnings {
+        padding: 20px 30px 95px 30px;
+    }
+    &-content-life {
+        padding: 20px 30px 150px 30px;
+    }
+    &-content-career:hover {
+        background-image: url('../images/teamwork1.jpg');
+    }
+    &-content-earnings:hover {
+        background-image: url('../images/teamwork2.jpg');
+    }
+    &-content-life:hover {
+        background-image: url('../images/teamwork3.jpg');
     }
 }
