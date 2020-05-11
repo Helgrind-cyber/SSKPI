@@ -141,6 +141,74 @@ nav .navbar-nav .nav-item {
   border-radius: 50px;
 }
 
+.people {
+  padding: 30px 0;
+  background: url("../images/people-banner.jpg");
+}
+
+.people-title {
+  padding: 30px 0;
+  font-weight: bold;
+  color: #fff;
+}
+
+.people-managers-eachPerson-image img {
+  max-width: 50%;
+  border-radius: 130px;
+  border: 5px solid #4DCEFD;
+}
+
+.people-managers-eachPerson-name {
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+.people-managers-eachPerson-position {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.people-managers-eachPerson-desc {
+  font-size: 1em;
+  color: #72A4D1;
+}
+
+.people-slice {
+  color: #fff;
+}
+
+.people-slice-quote-say {
+  font-size: 26px;
+}
+
+.people-slice-quote-name {
+  font-size: 18px;
+  margin: 0;
+  padding: 25px 0;
+}
+
+.people-slice-quote-name-position {
+  font-size: 15px;
+  opacity: .8;
+}
+
+.people-slice-person-icon {
+  opacity: .5;
+  margin: 0 20px;
+}
+
+.people-slice-person-icon img {
+  border-radius: 50px;
+  border: 3px solid #fff;
+}
+
+.people-slice-person .active {
+  opacity: 1;
+}
+
 @media (max-width: 576px) {
   .experience-column-2 {
     display: none;
