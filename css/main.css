@@ -358,6 +358,7 @@ footer .footer-brand {
 footer .footer-navigation {
   color: #fff;
   padding: 30px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 footer .footer-navigation-eachColumn-title {
@@ -376,6 +377,74 @@ footer .footer-navigation-eachColumn-list {
 footer .footer-navigation-eachColumn-list a {
   color: #fff;
   padding: 10px 0;
+}
+
+footer .footer-navigation-eachColumn-news {
+  margin: 15px 0;
+}
+
+footer .footer-navigation-eachColumn-news-content {
+  padding-left: 10px;
+}
+
+footer .footer-navigation-eachColumn-news-content h6 {
+  font-size: 18px;
+  line-height: 160%;
+}
+
+footer .footer-navigation-eachColumn-news-content p {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+footer .footer-navigation-eachColumn-news-content a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #4DCEFD;
+}
+
+footer .footer-navigation .list-news .footer-navigation-eachColumn-link {
+  font-size: 14px;
+  text-align: right;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #4DCEFD;
+}
+
+footer .footer-moreInfo {
+  padding-top: 50px;
+  color: #fff;
+}
+
+footer .footer-moreInfo-address-label {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+footer .footer-moreInfo-address-list {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+footer .footer-moreInfo-social-label {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+footer .footer-moreInfo-social-item {
+  font-size: 18px;
+  color: #2D7DF6;
+  padding: 10px 0;
+}
+
+footer .footer-moreInfo-social-item i {
+  font-size: 28px;
+  color: #fff;
+  margin-right: 20px;
 }
 
 @media (max-width: 576px) {
