@@ -51,6 +51,7 @@ nav {
     }
     &-title {
         padding: 85px 0;
+        font-size: 36px;
         font-weight: bold;
         color: #3E3E94;
     }
@@ -58,7 +59,7 @@ nav {
         background: #fff;
         border-radius: 15px;
         box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
-        transition: all 0.6s;
+        transition: all 0.8s;
         &-icon {
             padding: 40px 0;
         }
@@ -74,7 +75,7 @@ nav {
     &-content:hover {
         background-size: cover;
         color: #fff;
-        background-position: center top;
+        background-position: center;
     }
     &-content-career {
         padding: 20px 30px 150px 30px;
@@ -97,12 +98,13 @@ nav {
 }
 
 .experience {
-    background: url('../images/experience-banner.jpg');
+    background: url('../images/experience-banner.jpg') center;
     .row {
         padding-bottom: 60px;
     }
     &-title {
         padding: 50px 0;
+        font-size: 36px;
         font-weight: bold;
         color: #fff;
     }
@@ -123,6 +125,7 @@ nav {
     background: url('../images/people-banner.jpg') center;
     &-title {
         padding: 30px 0;
+        font-size: 36px;
         font-weight: bold;
         color: #fff;
     }
@@ -196,6 +199,121 @@ nav {
     }
 }
 
+.jobs {
+    padding: 15px 0 20px 0;
+    & &-title {
+        font-size: 36px;
+        padding: 30px 0;
+        font-weight: bold;
+        color: #3E3E94;
+    }
+    .jobs-content {
+        margin: 0 10px;
+        background: #FFFFFF;
+        box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+        border-radius: 15px;
+        &-icon {
+            padding: 35px 0;
+        }
+        &-title {
+            font-size: 18px;
+            line-height: 32px;
+        }
+        &-link {
+            margin: 30px 0;
+            background: #4DCEFD;
+            border-radius: 100px;
+            border: none;
+        }
+    }
+}
+
+.form {
+    .container {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    &-title {
+        background: url('../images/form-banner.jpg') center;
+        background-size: cover;
+        padding: 80px 0;
+        &-main {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+        &-sub {
+            font-size: 18px;
+            margin: 0;
+        }
+        color: #fff;
+    }
+    &-content {
+        background: #EEF2F6;
+        border-radius: 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        &-input {
+            padding: 30px 10px 20px 10px;
+            .form-control {
+                padding: 27px !important;
+            }
+        }
+        &-event {
+            padding: 30px 10px 20px 10px;
+            &-main {
+                padding-bottom: 20px;
+                a {
+                    padding-right: 30px;
+                    color: #9393A4;
+                }
+                .active {
+                    color: #000;
+                }
+            }
+            &-sub {
+                &-file::-webkit-file-upload-button {
+                    // visibility: hidden;
+                    content: 'Chọn file';
+                    display: inline-block;
+                    background: #fff;
+                    box-shadow: 0px 4px 6px rgba(87, 87, 87, 0.2);
+                    border: none;
+                    border-radius: 30px;
+                    padding: 15px 28px;
+                    outline: none;
+                    white-space: nowrap;
+                    -webkit-user-select: none;
+                    cursor: pointer;
+                }
+                // &-file::before {
+                //     content: 'Chọn file';
+                //     display: inline-block;
+                //     background: #fff;
+                //     box-shadow: 0px 4px 6px rgba(87, 87, 87, 0.2);
+                //     border-radius: 30px;
+                //     padding: 15px 28px;
+                //     outline: none;
+                //     white-space: nowrap;
+                //     -webkit-user-select: none;
+                //     cursor: pointer;
+                // }
+                &-descript {
+                    font-size: 16px;
+                    line-height: 160%;
+                    color: #BFBFCC;
+                }
+                &-submit {
+                    padding: 15px 25px;
+                    background: #4DCEFD;
+                    border: none;
+                    border-radius: 100px;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 576px) {
     .experience {
         &-column-2 {
@@ -214,6 +332,25 @@ nav {
         }
         &-column-3 {
             display: block;
+        }
+    }
+    .form {
+        .container {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        &-title {
+            padding: 80px 0 280px 0;
+        }
+        &-content {
+            margin-top: -200px;
+            margin-bottom: 30px;
+            &-input {
+                padding: 30px 30px 20px 30px;
+            }
+            &-event {
+                padding: 30px 30px 20px 30px;
+            }
         }
     }
 }
