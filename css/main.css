@@ -346,6 +346,38 @@ nav .navbar-nav .nav-item {
   border-radius: 100px;
 }
 
+footer {
+  background: #0E0E39 center;
+  padding: 60px 0;
+}
+
+footer .footer-brand {
+  padding-bottom: 30px;
+}
+
+footer .footer-navigation {
+  color: #fff;
+  padding: 30px 0;
+}
+
+footer .footer-navigation-eachColumn-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+footer .footer-navigation-eachColumn-list {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+footer .footer-navigation-eachColumn-list a {
+  color: #fff;
+  padding: 10px 0;
+}
+
 @media (max-width: 576px) {
   .experience-column-2 {
     display: none;
