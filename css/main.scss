@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+// Set variable
+@mixin background-image($path) {
+    background: url($path) center;
+    background-size: cover;
+}
+
+@mixin title($font-size) {
+    margin: 0;
+    font-weight: bold;
+    font-size: $font-size;
+}
+
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box !important;
@@ -19,15 +31,13 @@ nav {
 }
 
 .banner {
-    background: url('../images/banner.jpg') center;
+    @include background-image('../images/banner.jpg');
     color: #fff;
     &-content {
         padding: 200px 5px;
         &-title {
-            font-weight: bold;
-            font-size: 40px;
+            @include title(40px);
             padding: 25px 0;
-            margin: 0;
         }
         &-paragraph {
             font-size: 20px;
@@ -50,9 +60,8 @@ nav {
         padding-bottom: 100px;
     }
     &-title {
+        @include title(36px);
         padding: 85px 0;
-        font-size: 36px;
-        font-weight: bold;
         color: #3E3E94;
     }
     &-content {
@@ -64,8 +73,7 @@ nav {
             padding: 40px 0;
         }
         &-title {
-            font-weight: bold;
-            margin: 0;
+            @include title(-size);
             padding-bottom: 15px;
         }
         &-paragraph {
@@ -87,25 +95,24 @@ nav {
         padding: 20px 30px 150px 30px;
     }
     &-content-career:hover {
-        background-image: url('../images/teamwork1.jpg');
+        @include background-image('../images/teamwork1.jpg');
     }
     &-content-earnings:hover {
-        background-image: url('../images/teamwork2.jpg');
+        @include background-image('../images/teamwork2.jpg');
     }
     &-content-life:hover {
-        background-image: url('../images/teamwork3.jpg');
+        @include background-image('../images/teamwork3.jpg');
     }
 }
 
 .experience {
-    background: url('../images/experience-banner.jpg') center;
+    @include background-image('../images/experience-banner.jpg');
     .row {
         padding-bottom: 60px;
     }
     &-title {
+        @include title(36px);
         padding: 50px 0;
-        font-size: 36px;
-        font-weight: bold;
         color: #fff;
     }
     &-content {
@@ -121,12 +128,11 @@ nav {
 }
 
 .people {
+    @include background-image('../images/people-banner.jpg');
     padding: 30px 0;
-    background: url('../images/people-banner.jpg') center;
     &-title {
+        @include title(36px);
         padding: 30px 0;
-        font-size: 36px;
-        font-weight: bold;
         color: #fff;
     }
     &-managers {
@@ -202,9 +208,8 @@ nav {
 .jobs {
     padding: 15px 0 20px 0;
     & &-title {
-        font-size: 36px;
+        @include title(36px);
         padding: 30px 0;
-        font-weight: bold;
         color: #3E3E94;
     }
     .jobs-content {
@@ -234,12 +239,10 @@ nav {
         padding-left: 0px;
     }
     &-title {
-        background: url('../images/form-banner.jpg') center;
-        background-size: cover;
+        @include background-image('../images/form-banner.jpg');
         padding: 80px 0;
         &-main {
-            font-size: 36px;
-            font-weight: bold;
+            @include title(36px);
             margin-bottom: 12px;
         }
         &-sub {
@@ -326,8 +329,7 @@ footer {
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         &-eachColumn {
             &-title {
-                font-weight: 500;
-                font-size: 24px;
+                @include title(24px);
                 line-height: 33px;
             }
             &-list {
@@ -344,19 +346,21 @@ footer {
                 margin: 15px 0;
                 &-content {
                     padding-left: 10px;
-                    h6 {
-                        font-size: 18px;
-                        line-height: 160%;
-                    }
-                    p {
-                        font-size: 14px;
-                        line-height: 150%;
-                    }
                     a {
                         font-weight: 500;
                         font-size: 14px;
                         line-height: 150%;
                         color: #4DCEFD;
+                    }
+                    p {
+                        font-size: 14px;
+                        line-height: 150%;
+                    }
+                    &-label {
+                        font-size: 18px !important;
+                        font-weight: normal !important;
+                        line-height: 160% !important;
+                        color: #fff !important;
                     }
                 }
             }

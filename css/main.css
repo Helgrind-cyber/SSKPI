@@ -21,6 +21,7 @@ nav .navbar-nav .nav-item {
 
 .banner {
   background: url("../images/banner.jpg") center;
+  background-size: cover;
   color: #fff;
 }
 
@@ -29,10 +30,10 @@ nav .navbar-nav .nav-item {
 }
 
 .banner-content-title {
+  margin: 0;
   font-weight: bold;
   font-size: 40px;
   padding: 25px 0;
-  margin: 0;
 }
 
 .banner-content-paragraph {
@@ -59,9 +60,10 @@ nav .navbar-nav .nav-item {
 }
 
 .introduce-title {
-  padding: 85px 0;
-  font-size: 36px;
+  margin: 0;
   font-weight: bold;
+  font-size: 36px;
+  padding: 85px 0;
   color: #3E3E94;
 }
 
@@ -79,8 +81,9 @@ nav .navbar-nav .nav-item {
 }
 
 .introduce-content-title {
-  font-weight: bold;
   margin: 0;
+  font-weight: bold;
+  font-size: -size;
   padding-bottom: 15px;
 }
 
@@ -107,19 +110,23 @@ nav .navbar-nav .nav-item {
 }
 
 .introduce-content-career:hover {
-  background-image: url("../images/teamwork1.jpg");
+  background: url("../images/teamwork1.jpg") center;
+  background-size: cover;
 }
 
 .introduce-content-earnings:hover {
-  background-image: url("../images/teamwork2.jpg");
+  background: url("../images/teamwork2.jpg") center;
+  background-size: cover;
 }
 
 .introduce-content-life:hover {
-  background-image: url("../images/teamwork3.jpg");
+  background: url("../images/teamwork3.jpg") center;
+  background-size: cover;
 }
 
 .experience {
   background: url("../images/experience-banner.jpg") center;
+  background-size: cover;
 }
 
 .experience .row {
@@ -127,9 +134,10 @@ nav .navbar-nav .nav-item {
 }
 
 .experience-title {
-  padding: 50px 0;
-  font-size: 36px;
+  margin: 0;
   font-weight: bold;
+  font-size: 36px;
+  padding: 50px 0;
   color: #fff;
 }
 
@@ -147,14 +155,16 @@ nav .navbar-nav .nav-item {
 }
 
 .people {
-  padding: 30px 0;
   background: url("../images/people-banner.jpg") center;
+  background-size: cover;
+  padding: 30px 0;
 }
 
 .people-title {
-  padding: 30px 0;
-  font-size: 36px;
+  margin: 0;
   font-weight: bold;
+  font-size: 36px;
+  padding: 30px 0;
   color: #fff;
 }
 
@@ -233,9 +243,10 @@ nav .navbar-nav .nav-item {
 }
 
 .jobs .jobs-title {
+  margin: 0;
+  font-weight: bold;
   font-size: 36px;
   padding: 30px 0;
-  font-weight: bold;
   color: #3E3E94;
 }
 
@@ -276,8 +287,9 @@ nav .navbar-nav .nav-item {
 }
 
 .form-title-main {
-  font-size: 36px;
+  margin: 0;
   font-weight: bold;
+  font-size: 36px;
   margin-bottom: 12px;
 }
 
@@ -362,7 +374,8 @@ footer .footer-navigation {
 }
 
 footer .footer-navigation-eachColumn-title {
-  font-weight: 500;
+  margin: 0;
+  font-weight: bold;
   font-size: 24px;
   line-height: 33px;
 }
@@ -387,9 +400,11 @@ footer .footer-navigation-eachColumn-news-content {
   padding-left: 10px;
 }
 
-footer .footer-navigation-eachColumn-news-content h6 {
-  font-size: 18px;
-  line-height: 160%;
+footer .footer-navigation-eachColumn-news-content a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #4DCEFD;
 }
 
 footer .footer-navigation-eachColumn-news-content p {
@@ -397,11 +412,11 @@ footer .footer-navigation-eachColumn-news-content p {
   line-height: 150%;
 }
 
-footer .footer-navigation-eachColumn-news-content a {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 150%;
-  color: #4DCEFD;
+footer .footer-navigation-eachColumn-news-content-label {
+  font-size: 18px !important;
+  font-weight: normal !important;
+  line-height: 160% !important;
+  color: #fff !important;
 }
 
 footer .footer-navigation .list-news .footer-navigation-eachColumn-link {
