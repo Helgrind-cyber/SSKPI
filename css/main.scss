@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 // Set variable
 @mixin background-image($path) {
     background: url($path) center;
@@ -23,6 +24,7 @@ img {
 
 nav {
     font-size: 18px;
+
     .navbar-nav {
         .nav-item {
             padding: 0 10px;
@@ -33,21 +35,26 @@ nav {
 .banner {
     @include background-image('../images/banner.jpg');
     color: #fff;
+
     &-content {
         padding: 200px 5px;
+
         &-title {
             @include title(40px);
             padding: 25px 0;
         }
+
         &-paragraph {
             font-size: 20px;
             padding: 25px 0;
         }
+
         &-button {
             background-color: #4DCEFD;
             border-radius: 30px;
             padding: 15px 25px;
         }
+
         &-button:hover {
             background-color: rgb(72, 186, 228);
         }
@@ -56,50 +63,63 @@ nav {
 
 .introduce {
     background: #EEF2F6;
+
     .row {
         padding-bottom: 100px;
     }
+
     &-title {
         @include title(36px);
         padding: 85px 0;
         color: #3E3E94;
     }
+
     &-content {
         background: #fff;
         border-radius: 15px;
         box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
         transition: all 0.8s;
+
         &-icon {
             padding: 40px 0;
         }
+
         &-title {
             @include title(-size);
             padding-bottom: 15px;
         }
+
         &-paragraph {
             line-height: 28px;
         }
     }
+
     &-content:hover {
         background-size: cover;
         color: #fff;
         background-position: center;
     }
+
     &-content-career {
         padding: 20px 30px 150px 30px;
     }
+
     &-content-earnings {
         padding: 20px 30px 95px 30px;
     }
+
     &-content-life {
         padding: 20px 30px 150px 30px;
     }
+
     &-content-career:hover {
         @include background-image('../images/teamwork1.jpg');
     }
+
     &-content-earnings:hover {
         @include background-image('../images/teamwork2.jpg');
     }
+
     &-content-life:hover {
         @include background-image('../images/teamwork3.jpg');
     }
@@ -107,18 +127,23 @@ nav {
 
 .experience {
     @include background-image('../images/experience-banner.jpg');
+
     .row {
         padding-bottom: 60px;
     }
+
     &-title {
         @include title(36px);
         padding: 50px 0;
         color: #fff;
     }
+
     &-content {
         padding: 0;
+
         &-images {
             border-radius: 15px;
+
             &-image {
                 margin: 15px 10px;
                 border-radius: 50px;
@@ -130,11 +155,13 @@ nav {
 .people {
     @include background-image('../images/people-banner.jpg');
     padding: 30px 0;
+
     &-title {
         @include title(36px);
         padding: 30px 0;
         color: #fff;
     }
+
     &-managers {
         &-eachPerson {
             &-image {
@@ -144,6 +171,7 @@ nav {
                     border: 5px solid #4DCEFD;
                 }
             }
+
             &-name {
                 color: #fff;
                 font-weight: bold;
@@ -151,18 +179,22 @@ nav {
                 margin: 0;
                 font-size: 18px;
             }
+
             &-position {
                 font-size: 18px;
                 color: rgba($color: #fff, $alpha: .4);
             }
+
             &-desc {
                 font-size: 1em;
                 color: #72A4D1;
             }
         }
     }
+
     &-slice {
         color: #fff;
+
         &-quote {
             &-say {
                 font-weight: 100;
@@ -170,6 +202,7 @@ nav {
                 font-size: 26px;
                 opacity: .9;
                 position: relative;
+
                 .open-double-quote {
                     opacity: 0.15;
                     padding-bottom: 5px;
@@ -179,25 +212,30 @@ nav {
                     top: -25px;
                 }
             }
+
             &-name {
                 font-size: 18px;
                 margin: 0;
                 padding: 25px 0;
+
                 &-position {
                     font-size: 15px;
                     opacity: .8;
                 }
             }
         }
+
         &-person {
             &-icon {
                 opacity: .5;
                 margin: 0 20px;
+
                 img {
                     border-radius: 50px;
                     border: 3px solid #fff;
                 }
             }
+
             .active {
                 opacity: 1;
             }
@@ -207,23 +245,28 @@ nav {
 
 .jobs {
     padding: 15px 0 20px 0;
+
     & &-title {
         @include title(36px);
         padding: 30px 0;
         color: #3E3E94;
     }
+
     .jobs-content {
         margin: 0 10px;
         background: #FFFFFF;
         box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
         border-radius: 15px;
+
         &-icon {
             padding: 35px 0;
         }
+
         &-title {
             font-size: 18px;
             line-height: 32px;
         }
+
         &-link {
             margin: 30px 0;
             background: #4DCEFD;
@@ -238,42 +281,54 @@ nav {
         padding-right: 0px;
         padding-left: 0px;
     }
+
     &-title {
         @include background-image('../images/form-banner.jpg');
         padding: 80px 0;
+
         &-main {
             @include title(36px);
             margin-bottom: 12px;
         }
+
         &-sub {
             font-size: 18px;
             margin: 0;
         }
+
         color: #fff;
     }
+
     &-content {
         background: #EEF2F6;
         border-radius: 10px;
         margin-top: 0px;
         margin-bottom: 0px;
+
         &-input {
             padding: 30px 10px 20px 10px;
+
             .form-control {
                 padding: 27px !important;
             }
         }
+
         &-event {
             padding: 30px 10px 20px 10px;
+
             &-main {
                 padding-bottom: 20px;
+
                 a {
                     padding-right: 30px;
                     color: #9393A4;
                 }
+
                 .active {
                     color: #000;
                 }
             }
+
             &-sub {
                 &-file::-webkit-file-upload-button {
                     // visibility: hidden;
@@ -289,6 +344,7 @@ nav {
                     -webkit-user-select: none;
                     cursor: pointer;
                 }
+
                 // &-file::before {
                 //     content: 'Chọn file';
                 //     display: inline-block;
@@ -306,6 +362,7 @@ nav {
                     line-height: 160%;
                     color: #BFBFCC;
                 }
+
                 &-submit {
                     padding: 15px 25px;
                     background: #4DCEFD;
@@ -320,42 +377,52 @@ nav {
 footer {
     background: #0E0E39 center;
     padding: 60px 0;
+
     .footer-brand {
         padding-bottom: 30px;
     }
+
     .footer-navigation {
         color: #fff;
         padding: 30px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
         &-eachColumn {
             &-title {
                 @include title(24px);
                 line-height: 33px;
             }
+
             &-list {
                 list-style: none;
                 padding: 0;
                 font-size: 18px;
                 line-height: 160%;
+
                 a {
                     color: #fff;
                     padding: 10px 0;
                 }
             }
+
             &-news {
                 margin: 15px 0;
+
                 &-content {
                     padding-left: 10px;
+
                     a {
                         font-weight: 500;
                         font-size: 14px;
                         line-height: 150%;
                         color: #4DCEFD;
                     }
+
                     p {
                         font-size: 14px;
                         line-height: 150%;
                     }
+
                     &-label {
                         font-size: 18px !important;
                         font-weight: normal !important;
@@ -365,6 +432,7 @@ footer {
                 }
             }
         }
+
         .list-news {
             .footer-navigation-eachColumn-link {
                 font-size: 14px;
@@ -374,31 +442,37 @@ footer {
             }
         }
     }
+
     .footer-moreInfo {
         padding-top: 50px;
         color: #fff;
+
         &-address {
             &-label {
                 font-weight: 600;
                 font-size: 18px;
                 line-height: 160%;
             }
+
             &-list {
                 list-style: none;
                 padding: 0;
                 font-size: 16px;
             }
         }
+
         &-social {
             &-label {
                 font-weight: 600;
                 font-size: 18px;
                 line-height: 160%;
             }
+
             &-item {
                 font-size: 18px;
                 color: #2D7DF6;
                 padding: 10px 0;
+
                 i {
                     font-size: 28px;
                     color: #fff;
@@ -414,6 +488,7 @@ footer {
         &-column-2 {
             display: none;
         }
+
         &-column-3 {
             display: none;
         }
@@ -425,27 +500,64 @@ footer {
         &-column-2 {
             display: block;
         }
+
         &-column-3 {
             display: block;
         }
     }
+
     .form {
         .container {
             padding-right: 15px;
             padding-left: 15px;
         }
+
         &-title {
             padding: 80px 0 280px 0;
         }
+
         &-content {
             margin-top: -200px;
             margin-bottom: 30px;
+
             &-input {
                 padding: 30px 30px 20px 30px;
             }
+
             &-event {
                 padding: 30px 30px 20px 30px;
             }
         }
+    }
+
+    .introduce {
+        &-content {
+            &-earnings {
+                padding: 20px 30px 40px 30px;
+            }
+        }
+
+    }
+}
+
+@media (min-width: 992px) {
+    .introduce {
+        &-content {
+            &-earnings {
+                padding: 20px 30px 120px 30px;
+            }
+        }
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .introduce {
+        &-content {
+            &-earnings {
+                padding: 20px 30px 95px 30px;
+            }
+        }
+
     }
 }
